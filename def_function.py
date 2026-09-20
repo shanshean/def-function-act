@@ -6,7 +6,6 @@
 def calculate_rent_balance(monthly_rent, payments):
   """calculates the rent balance of the tenant and
   the payment amount for each month using for-in."""
-  
   months = ["August", "September", "October", "November", "December"]
   total_rent = monthly_rent * len(months)
   total_paid = sum(payments)
@@ -20,10 +19,11 @@ print(f"Balance: {balance:.2f}")
 
 return balance 
 
-#Input rent amount
+#Asking the tenant the amount of monthly rent
 monthly_rent = float(input("Enter monthly rent amount: "))
 
-#Input payment amounts for each month 
+#Loop for months. Inputing monthly payment and defining the month. 
+#It is to calculate each payment and summing up the total rent
 payment = []
 for month in ["August", "September", "October", "November", "December"]:
   payment = float(input(f"Enter payment for {month}: ))
